@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+.container {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+%btn {
+    padding: $basePadding $basePadding*2;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    @extend %btn;
+    color: $baseBlue;
+    border: 1px solid $baseBlue;
+    &:hover {
+        color: white;
+        background: $baseBlue;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    color: white;
+    background: $baseBlue;
+}

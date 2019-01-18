@@ -1,0 +1,4 @@
+@mixin commonBorderBottom($color: black, $height: 1px)
+{
+    border-bottom: $height solid $color;
+}

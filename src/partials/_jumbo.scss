@@ -1,0 +1,45 @@
+.jumbo {
+    %jumboCommon {
+        display: flex;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 600px;
+    }
+    .jumbo-left {
+        @extend %jumboCommon;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: $basePadding*2;
+        color: $myFavoriteGrey;
+        h1 {
+            font-size: 55px;
+            color: $myFavoriteGrey;
+        }
+        p {
+            margin-top: $baseMargin*4;
+            font-size: 22px;
+        }
+        .jumbo-left-bottom {
+            margin-top: $baseMargin*4;
+            margin-bottom: $baseMargin*3;
+            a {
+                text-decoration: none;
+                &:hover {
+                    background: darken($baseBlue, 10%);
+                }
+            }
+            span {
+                margin: 0 $baseMargin;
+                color: lightgrey;
+            }
+        }
+    }
+    .jumbo-right {
+        align-items: center;
+        @extend %jumboCommon;
+        img {
+            width: 100%;
+        }
+    }
+}
